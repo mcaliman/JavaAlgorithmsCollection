@@ -2,7 +2,7 @@ package io.github.mcaliman.algoritms;
 
 import java.util.Stack;
 
-public class DFS implements Visitor {
+public class DFSVisitor implements Visitor {
 
     public static void main(String[] args) {
         Node<String> rootNode = new Node<>("c");
@@ -13,7 +13,7 @@ public class DFS implements Visitor {
         rootNode.setRight(rightChildLevel1);
         leftChildLevel1.setLeft(leftChildLevel2);
 
-        Visitor visitor = new DFS();
+        Visitor visitor = new DFSVisitor();
         visitor.visit(rootNode);
         System.out.println();
     }

@@ -8,7 +8,7 @@ import java.util.Queue;
  * BreadthFirstSearch
  * Created by mcaliman on 04/07/17.
  */
-public class BFS implements Visitor {
+public class BFSVisitor implements Visitor {
 
 
     public static void main(String[] args) {
@@ -21,7 +21,7 @@ public class BFS implements Visitor {
         rootNode.setRight(rightChildLevel1);
         leftChildLevel1.setLeft(leftChildLevel2);
 
-        Visitor visitor = new BFS();
+        Visitor visitor = new BFSVisitor();
         visitor.visit(rootNode);
         System.out.println();
     }
